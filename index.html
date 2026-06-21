@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать приложение "Двери Профи"</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a2b3c;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #c69c6d;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #5a6b7c;
+            margin-bottom: 40px;
+            border-bottom: 2px dashed #e0e8f0;
+            padding-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-item {
+            background: #f8faff;
+            padding: 20px 25px;
+            border-radius: 20px;
+            width: 200px;
+            border: 1px solid #edf2f9;
+        }
+
+        .feature-item .icon {
+            font-size: 36px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .feature-item h3 {
+            font-size: 16px;
+            color: #1a2b3c;
+        }
+
+        .download-section {
+            background: #eef4fa;
+            border-radius: 30px;
+            padding: 40px 20px;
+            margin: 30px 0;
+        }
+
+        .download-section h2 {
+            font-size: 26px;
+            color: #1a2b3c;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            border-radius: 60px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        .btn-mobile {
+            background: #3ddc84;
+            color: #1a2b3c;
+        }
+
+        .btn-mobile:hover {
+            background: #2fc873;
+            transform: scale(1.03);
+        }
+
+        .btn-desktop {
+            background: #1a2b3c;
+        }
+
+        .btn-desktop:hover {
+            background: #2c4055;
+            transform: scale(1.03);
+        }
+
+        .btn svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #8a9baa;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .feature-item {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚪 <span>Двери</span>Профи</h1>
+    <p class="subtitle">Ваш личный каталог дверей • 3D-примерка • Замеры</p>
+
+    <div class="features">
+        <div class="feature-item">
+            <span class="icon">📐</span>
+            <h3>Точные замеры</h3>
+        </div>
+        <div class="feature-item">
+            <span class="icon">🎨</span>
+            <h3>200+ цветов</h3>
+        </div>
+        <div class="feature-item">
+            <span class="icon">📱</span>
+            <h3>AR-примерка</h3>
+        </div>
+    </div>
+
+    <div class="download-section">
+        <h2> Скачайте приложение</h2>
+        <div class="buttons">
+
+            <!-- МОБИЛЬНОЕ ПРИЛОЖЕНИЕ -->
+            <a href="app-debug.apk" class="btn btn-mobile" download>
+                <svg viewBox="0 0 24 24"><path d="M17.523 14.342a.7.7 0 0 1-.7-.7v-2.9a.7.7 0 1 1 1.4 0v2.9a.7.7 0 0 1-.7.7zm-11.046 0a.7.7 0 0 1-.7-.7v-2.9a.7.7 0 1 1 1.4 0v2.9a.7.7 0 0 1-.7.7zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                Мобильное (APK)
+            </a>
+
+            <!-- ДЕСКТОПНОЕ ПРИЛОЖЕНИЕ - ТЕПЕРЬ doors.zip -->
+            <a href="doors.zip" class="btn btn-desktop" download>
+                <svg viewBox="0 0 24 24"><path d="M21 14H3V4h18v10zm0-12H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                Десктоп (ZIP)
+            </a>
+
+        </div>
+
+        <p style="margin-top: 20px; font-size: 14px; color: #5a6b7c;">
+            ⚡ Доступно для Android и Windows
+        </p>
+    </div>
+
+    <div class="footer">
+        © 2026 «ДвериПрофи» — Все права защищены
+    </div>
+
+</div>
+
+</body>
+</html>
